@@ -1,0 +1,8 @@
+*.[oa]
+*.cm[ioxa]
+*.cmx[as]
+.*.swp
+_*
+*~
+src-*/doc/*.html
+src-*/doc/*.css

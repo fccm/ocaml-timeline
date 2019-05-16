@@ -1,0 +1,8 @@
+description = "Evolution of values with associated timeline, time managed as int"
+version = "0.01"
+
+archive(byte) = "iTimed.cma"
+archive(native) = "iTimed.cmxa"
+plugin(byte) = "iTimed.cma"
+plugin(native) = "iTimed.cmxs"
+

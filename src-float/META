@@ -1,0 +1,8 @@
+description = "Evolution of values with associated timeline, time managed as float"
+version = "0.01"
+
+archive(byte) = "fTimed.cma"
+archive(native) = "fTimed.cmxa"
+plugin(byte) = "fTimed.cma"
+plugin(native) = "fTimed.cmxs"
+
