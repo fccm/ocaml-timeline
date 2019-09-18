@@ -47,6 +47,16 @@ let get_val t = function
   | Animated anim -> val_at t anim
 
 
+let rec finished t = function
+  | From _ :: [] -> true
+  | Evol(_, t2, _, _) :: [] -> t > t2
+
+  | From(t2, _) :: tl -> if t < t2 then false else finished t tl
+  | Evol(_, t2, _, _) :: tl -> if t < t2 then false else finished t tl
+
+  | _ -> false
+
+
 module Labels = struct
 
   let val_at ~t ~anim = val_at t anim

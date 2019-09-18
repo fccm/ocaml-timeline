@@ -41,6 +41,9 @@ val val_at :
 val get_val :
   time -> ('a, 'b) timed -> 'a
 
+val finished :
+  time -> ('a, 'b) animated list -> bool
+
 
 (** {3 Labeled functions} *)
 
